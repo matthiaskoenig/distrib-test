@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:distrib="http://www.sbml.org/sbml/level3/version1/distrib/version1" level="3" version="1" distrib:required="true">
+  <model>
+    <listOfCompartments>
+      <compartment id="C" spatialDimensions="3" size="1" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="s1" compartment="C" initialAmount="3.22" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <distrib:uncertainty>
+          <distrib:uncertStatistics>
+            <distrib:standardDeviation distrib:value="0.3"/>
+          </distrib:uncertStatistics>
+        </distrib:uncertainty>
+      </species>
+    </listOfSpecies>
+  </model>
+</sbml>

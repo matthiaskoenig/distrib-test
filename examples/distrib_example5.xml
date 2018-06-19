@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:distrib="http://www.sbml.org/sbml/level3/version1/distrib/version1" level="3" version="1" distrib:required="true">
+  <model>
+    <listOfParameters>
+      <parameter id="mu_Z" value="10" constant="true"/>
+      <parameter id="var_Z" value="0.1" constant="true"/>
+      <parameter id="Z" constant="true">
+        <distrib:uncertainty>
+          <distrib:normalDistribution>
+            <distrib:mean distrib:var="mu_Z"/>
+            <distrib:variance distrib:var="var_Z"/>
+          </distrib:normalDistribution>
+        </distrib:uncertainty>
+      </parameter>
+    </listOfParameters>
+  </model>
+</sbml>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:distrib="http://www.sbml.org/sbml/level3/version1/distrib/version1" level="3" version="1" distrib:required="true">
+  <model>
+    <listOfParameters>
+      <parameter id="gender" constant="false">
+        <distrib:uncertainty>
+          <distrib:categoricalDistribution>
+            <distrib:listOfCategories>
+              <distrib:category distrib:id="male">
+                <distrib:probability distrib:value="0.5"/>
+                <distrib:value distrib:value="0"/>
+              </distrib:category>
+              <distrib:category distrib:id="female">
+                <distrib:probability distrib:value="0.5"/>
+                <distrib:value distrib:value="1"/>
+              </distrib:category>
+            </distrib:listOfCategories>
+          </distrib:categoricalDistribution>
+        </distrib:uncertainty>
+      </parameter>
+    </listOfParameters>
+  </model>
+</sbml>

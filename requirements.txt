@@ -1,0 +1,4 @@
+# python-libsbml-experimental>=5.17.1
+pandas
+libroadrunner
+numpy

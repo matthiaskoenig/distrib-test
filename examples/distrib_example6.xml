@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:distrib="http://www.sbml.org/sbml/level3/version1/distrib/version1" level="3" version="1" distrib:required="true">
+  <model>
+    <listOfCompartments>
+      <compartment id="C" spatialDimensions="3" size="1" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="s1" compartment="C" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <distrib:uncertainty>
+          <distrib:categoricalDistribution>
+            <distrib:listOfCategories>
+              <distrib:category distrib:id="patient1">
+                <distrib:probability distrib:value="0.5"/>
+                <distrib:value distrib:value="1.01"/>
+              </distrib:category>
+              <distrib:category distrib:id="patient2">
+                <distrib:probability distrib:value="0.25"/>
+                <distrib:value distrib:value="2.24"/>
+              </distrib:category>
+              <distrib:category distrib:id="patient3">
+                <distrib:value distrib:value="1.72"/>
+              </distrib:category>
+            </distrib:listOfCategories>
+          </distrib:categoricalDistribution>
+        </distrib:uncertainty>
+      </species>
+    </listOfSpecies>
+  </model>
+</sbml>
