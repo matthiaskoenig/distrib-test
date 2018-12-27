@@ -5,12 +5,6 @@
       <functionDefinition id="distribution">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <lambda>
-            <bvar>
-              <ci> x </ci>
-            </bvar>
-            <bvar>
-              <ci> y </ci>
-            </bvar>
             <notanumber/>
           </lambda>
         </math>

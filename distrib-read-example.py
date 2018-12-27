@@ -1,8 +1,5 @@
 """
-Working with dist examples.
-
-Definition of the DrawFromDistribution.
-
+Reading information from distrib examples.
 """
 import libsbml
 
